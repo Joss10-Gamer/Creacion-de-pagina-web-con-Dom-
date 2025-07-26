@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop, encontrá tu próximo teléfono</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="encabezado">
+        <div class="contenedor-header">
+            <h1>TechShop, encontrá tu próximo teléfono <span class="icono-carrito">🛒</span></h1>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="seccion-productos">
+            <h2 class="titulo-seccion">Nuestros Celulares</h2>
+            <div id="productos" class="grid-productos">
+                <!-- Los productos vienen desde el documento de javascript, aquí solo se cargan en este grid -->
+            </div>
+        </section>
+
+        <section class="seccion-carrito">
+            <h2 class="titulo-seccion">Tu Carrito</h2>
+            <div class="contenedor-carrito">
+                <ul id="lista-carrito" class="lista-carrito">
+                    <!-- Lo que hayamos seleccionado se irá poniendo en el carrito de forma dinámica -->
+                </ul>
+                <div class="resumen-carrito">
+                    <div class="total-carrito">
+                        <span>Total:</span>
+                        <span id="total">$0</span>
+                    </div>
+                    <button id="vaciar-carrito" class="boton-vaciar">Vaciar Carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Un pequeño footer -->
+    <footer id="pie-pagina">
+        <p>© 2025 TechShop - Todos los derechos reservados (Proyecto creado por William Eliseo López Alvarado & Josue David Naves Erazo)</p>
+    </footer>
+
+    <!-- Enlazamos el documento de javascript al HTML -->
+    <script src="script.js"></script>
+</body>
+</html>
